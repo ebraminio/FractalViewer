@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Simple Fractal Viewer</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+
+  <script language="javascript" src="scripts/jQuery/jquery-1.5.1.min.js"></script>
+
+  <script language="javascript" src="scripts/jQuery/jquery.imgareaselect.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="scripts/Controller/jQuery/styles/imgareaselect-default.css">
+  
+  <script language="javascript" src="scripts/jQuery/ui/jquery-ui-1.8.14.custom.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="scripts/Controller/jQuery/ui/styles/base/jquery.ui.all.css">
+
+  <script language="javascript" src="scripts/pickColor.js"></script>
+  
+  <script language="javascript" src="scripts/Model/artist.js"></script>
+  <script language="javascript" src="scripts/Model/mandelbrot.js"></script>
+
+  <script language="javascript" src="scripts/view.js"></script>
+  <script language="javascript" src="scripts/Controller/controller.js"></script>
+ </head>
+ <body onLoad="load()">
+  <div class="wrapper">
+   <canvas id="mainCanvas" height="100%" width="100%">Your browser doesn't support!</canvas>
+   <div id="buttonsMenu" class="gradientBackground">
+    <input class="commandButton" type="button" value="Reset" id="clearButton">
+    <input class="commandButton" type="button" value="Pick Color!" id="colorPickerButton">
+    <p>Use left and right click for zoom in and zoom out</p>
+   </div>
+
+   <div id="settingMenu">
+    <div id="red" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-min" style="width: 100%; "></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 100%; " rel="noreferrer"></a></div>
+    <div id="green" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-min"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" rel="noreferrer"></a></div>
+    <div id="blue" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all"><div class="ui-slider-range ui-widget-header ui-slider-range-min"></div><a class="ui-slider-handle ui-state-default ui-corner-all" href="#" rel="noreferrer"></a></div>
+    <div id="swatch" class="ui-widget-content ui-corner-all" style="background-color: rgb(255, 140, 60); "></div>
+   </div>
+
+   <div class="bottom gradientBackground">
+    <p>Using HTML5 Canvas by Ebrahim Byagowi (ebraminio)</p>
+   </div>
+  </div>
+ </body>
+</html>
+ 
